@@ -87,17 +87,19 @@ ul li.active
 {
     position: fixed;
     top: 70%;
-    left: 43.5%;
-    padding: 25px;
-
+    left: 39%;
+    padding: 50px;
 }
 
 .button a
 {
     color: #fff;
     font-family: "IM Fell Great Primer SC", serif;
+    font-size: 25px;
     -webkit-animation-duration:6s;
     -webkit-animation-delay: 4s; 
+
+    
 }
 
 .button a:hover
