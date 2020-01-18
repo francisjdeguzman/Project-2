@@ -3,33 +3,38 @@
 // *********************************************************************************
 
 // Dependencies
-// =============================================================
+
 var path = require("path");
 
 // Routes
-// =============================================================
+
 module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads view.html
+  // index route loads the index (home) html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // cms route loads cms.html
-  app.get("/cms", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/cms.html"));
+  // about route loads about.html
+  app.get("/about", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
-  // blog route loads blog.html
-  app.get("/blog", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/blog.html"));
+  // gallery route loads gallery.html
+  app.get("/gallery", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/gallery.html"));
   });
 
-  // authors route loads author-manager.html
-  app.get("/authors", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/author-manager.html"));
+  // services route loads services.html
+  app.get("/services", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/services.html"));
+  });
+
+  // appointments route loads appointments.html
+  app.get("/appointments", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/appointments.html"));
   });
 
 };

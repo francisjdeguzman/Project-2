@@ -1,4 +1,5 @@
-DROP DATABASE IF EXISTS barbershop;
+DROP DATABASE IF EXISTS barber_db;
 
-CREATE DATABASE barbershop;
+CREATE DATABASE barber_db;
 
+USE barber_db;
