@@ -1,8 +1,9 @@
-DROP DATABASE IF EXISTS barber_db;
 
-CREATE DATABASE barber_db;
+DROP DATABASE IF EXISTS `barber_db`;
+
+CREATE DATABASE `barber_db`;
 ​
-USE barber_db;
+USE `barber_db`;
 ​
 DROP TABLE IF EXISTS `appointments`;
 DROP TABLE IF EXISTS `services`;
@@ -11,7 +12,7 @@ DROP TABLE IF EXISTS `barbers`;
 ​
 ​
 CREATE TABLE `barbers` (
-	`id` INT NOT NULL AUTO_INCREMENT,
+	`id` INT(11) AUTO_INCREMENT NOT NULL,
 	`first_name` varchar(255) NOT NULL,
 	`last_name` varchar(255) NOT NULL,
 	`phone_number` varchar(255) NOT NULL,
@@ -20,7 +21,7 @@ CREATE TABLE `barbers` (
 );
 ​
 CREATE TABLE `appointments` (
-	`id` INT NOT NULL AUTO_INCREMENT,
+	`id` INT(11) AUTO_INCREMENT NOT NULL,
 	`barber_id` INT NOT NULL,
 	`customer_id` INT NOT NULL,
 	`time` varchar(255) NOT NULL,
@@ -31,14 +32,14 @@ CREATE TABLE `appointments` (
 );
 ​
 CREATE TABLE `services` (
-	`id` INT NOT NULL AUTO_INCREMENT,
+	`id` INT(11) AUTO_INCREMENT NOT NULL,
 	`name` varchar(255) NOT NULL,
 	`rate` DECIMAL NOT NULL,
 	PRIMARY KEY (`id`)
 );
 ​
 CREATE TABLE `customers` (
-	`id` INT NOT NULL AUTO_INCREMENT,
+	`id` INT AUTO_INCREMENT NOT NULL,
 	`first_name` varchar(255) NOT NULL,
 	`last_name` varchar(255) NOT NULL,
 	`phone_number` varchar(255) NOT NULL,
