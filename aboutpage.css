@@ -80,6 +80,9 @@ ul li.active
     margin-top: 25%;
     left: 32%;
 
+    -webkit-animation-duration:4s;
+    -webkit-animation-delay: .8s; 
+    
 }
 
 
@@ -92,4 +95,8 @@ ul li.active
     margin-top: 30%;
     width: 50%;
     left: 23%;
+
+    -webkit-animation-duration:6s;
+    -webkit-animation-delay: 2s; 
+    
 }
