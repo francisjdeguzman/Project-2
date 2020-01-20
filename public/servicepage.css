@@ -9,7 +9,7 @@ body
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/siteimage5.jpg");
+    background-image: url("../images/siteimage4.jpg");
 }
 
 /* nav bar */
@@ -66,38 +66,39 @@ ul li.active
 }
 
 /* content */
-.bioTitle
-{ 
+.servTitle
+{
     color: #fff;
     position: relative;
 }
 
-.bioTitle h1 
+.servTitle h1
 {
     font-family: "IM Fell Great Primer SC", serif;
     font-size: 45px;
     position: absolute;
-    margin-top: 25%;
-    left: 32%;
-
+    margin-top: 26%;
+    left: 40%;
     /* animation */
     -webkit-animation-duration:4s;
     -webkit-animation-delay: .8s; 
-    
 }
 
-
-.bioContent p
+.servContent 
 {
-   font-family: "EB Garamond", serif;
-   font-size: 20px;
-    color: #fff;
-    position: absolute;
-    margin-top: 30%;
-    width: 50%;
-    left: 23%;
-/* animation */
-    -webkit-animation-duration:6s;
-    -webkit-animation-delay: 2s; 
-    
+font-family: "EB Garamond", serif;
+font-size: 30px;
+font-weight: 20px;
+  color: #fff;
+  display: list;
+  list-style: none;
+  position: absolute;
+  margin-top: 33%;
+  left: 33%;
+  text-align: center;
+  
+
+  /* animation */
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s; 
 }
