@@ -92,9 +92,9 @@ font-weight: 20px;
   color: #fff;
   display: list;
   list-style: none;
-  position: absolute;
-  margin-top: 33%;
-  left: 33%;
+  position: fixed;
+  margin-top: 31%;
+  left: 34%;
   text-align: center;
   
 
