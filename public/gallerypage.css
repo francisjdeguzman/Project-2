@@ -20,6 +20,7 @@ body
     top: 0;
     left: 0;
     margin-top: 25px;
+    margin-left: 44.5%;
     padding: 10px 100px;
     box-sizing: border-box;
     float: right;
@@ -89,11 +90,11 @@ body
 
 .carousel-item img
 {
-    width: 30%;
+    width: 20%;
     height: auto;
-    margin-top: 15%;
+    margin-top: 12%;
     margin-bottom: 5%;
-    margin-left: 35%;
+    margin-left: 41%;
 }
 
 .carousel-control-prev,
