@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   body
+=======
+body
+>>>>>>> ff6072c7ce5051eedab1c768e4b5e2cb0a7979cd
 {
     margin: 0;
     padding: 0;
@@ -77,8 +81,13 @@ ul li.active
     font-family: "IM Fell Great Primer SC", serif;
     font-size: 45px;
     position: absolute;
+<<<<<<< HEAD
     margin-top: 28%;
     left: 41%;
+=======
+    margin-top: 26%;
+    left: 40%;
+>>>>>>> ff6072c7ce5051eedab1c768e4b5e2cb0a7979cd
     /* animation */
     -webkit-animation-duration:4s;
     -webkit-animation-delay: .8s; 
@@ -86,6 +95,7 @@ ul li.active
 
 .servContent
 {
+<<<<<<< HEAD
     font-family: "EB Garamond", serif;
     font-size: 30px;
     font-weight: 20px;
@@ -103,4 +113,22 @@ ul li.active
     /* animation */
     -webkit-animation-duration: 6s;
     -webkit-animation-delay: 2s; 
+=======
+font-family: "EB Garamond", serif;
+font-size: 30px;
+font-weight: 20px;
+  color: #fff;
+  display: list;
+  list-style: none;
+  position: fixed;
+  margin-top: 31%;
+  left: 34%;
+  text-align: center;
+ 
+  
+
+  /* animation */
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s; 
+>>>>>>> ff6072c7ce5051eedab1c768e4b5e2cb0a7979cd
 }
