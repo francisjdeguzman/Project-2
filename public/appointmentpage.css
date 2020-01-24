@@ -1,0 +1,84 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "EB Garamond", serif;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/siteimage6.jpg");
+}
+
+/* nav bar */
+
+ul
+{
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    float: right;
+    list-style: none;
+    display: flex;
+    transition: 0.5s;
+}
+
+ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: "Cinzel", serif;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px, 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul li a.active,
+ul li a:hover
+{
+    color: #fff;
+    background: #630808;
+}
+
+ul li.active 
+{
+    background-color: #630808;
+    color: #fff;
+}
+
+.logo img
+{
+    float: left;
+    margin-left: 25px;
+    width: 150px;
+    height: auto;
+    transition: 0.5s;
+}
+
+/* content */
+.appTitle
+{
+    color: #fff;
+    position: relative;
+}
+
+.appTitle h1
+{
+    font-family: "IM Fell Great Primer SC", serif;
+    font-size: 45px;
+    position: absolute;
+    margin-top: 28%;
+    left: 41%;
+    /* animation */
+    -webkit-animation-duration:4s;
+    -webkit-animation-delay: .8s; 
+}
