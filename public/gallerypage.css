@@ -9,12 +9,13 @@ body
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/siteimage4.jpg");
+   
 }
 
 /* nav bar */
 
-ul
+
+.navbar ul
 {
     top: 0;
     left: 0;
@@ -27,14 +28,14 @@ ul
     transition: 0.5s;
 }
 
-ul li
+.navbar ul li
 {
     display: inline-block;
     margin-right: 20px;
     font-family: "Cinzel", serif;
 }
 
-ul li a
+.navbar ul li a
 {
     text-decoration: none;
     color: #ffffff;
@@ -43,14 +44,14 @@ ul li a
     transition: 0.5s;
 }
 
-ul li a.active,
-ul li a:hover
+.navbar ul li a.active,
+.navbar ul li a:hover
 {
     color: #fff;
     background: #630808;
 }
 
-ul li.active 
+.navbar ul li.active 
 {
     background-color: #630808;
     color: #fff;
@@ -66,40 +67,41 @@ ul li.active
 }
 
 /* content */
-.servTitle
+.galleryTitle
 {
     color: #fff;
     position: relative;
 }
 
-.servTitle h1
+.galleryTitle h1
 {
     font-family: "IM Fell Great Primer SC", serif;
     font-size: 45px;
     position: absolute;
-    margin-top: 26%;
-    left: 40%;
+    margin-top: 5%;
+    left: 44%;
     /* animation */
     -webkit-animation-duration:4s;
     -webkit-animation-delay: .8s; 
 }
 
-.servContent
-{
-font-family: "EB Garamond", serif;
-font-size: 30px;
-font-weight: 20px;
-  color: #fff;
-  display: list;
-  list-style: none;
-  position: fixed;
-  margin-top: 31%;
-  left: 34%;
-  text-align: center;
- 
-  
+/* carousel style */
 
-  /* animation */
-  -webkit-animation-duration: 6s;
-  -webkit-animation-delay: 2s; 
+.carousel-item img
+{
+    width: 30%;
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 35%;
+}
+
+.carousel-control-prev,
+.carousel-control-next
+{
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 30%;
+    top: calc(50% - 25px);
 }
