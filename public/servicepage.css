@@ -59,7 +59,7 @@ ul li.active
 .logo img
 {
     float: left;
-    margin-left: 25px;
+    margin-left: 0px;
     width: 150px;
     height: auto;
     transition: 0.5s;

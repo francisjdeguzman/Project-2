@@ -7,9 +7,9 @@
     <title>Appointment - Cuts by Crafty</title>
 
     <!-- style sheet, JS -->
-    <link rel="stylesheet" href="/public/form_assets/css/bootstrap.min.css">
-    <link rel="styelsheet" href="/public/form_assets/css/datepicker.css">
-
+    <link rel="stylesheet" href="form_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form_assets/css/datepicker.css">
+   
     <!-- other style sheets -->
     <link rel = "stylesheet" type = "text/css" href = "appointmentpage.css">
     <link rel = "stylesheet" href = "animate.min.css">
@@ -30,86 +30,87 @@
             </ul>
     </nav>
         
-       <section>
-           <div class="content">
-                <div class="contentRow">
-                    <h1> Make an Appointment </h1>
-                    <p>Book your appointment with Tommy, now!</p>
-                </div>
-           </div>
+    <section>
+        <!-- left box -->
+        <div class="contentRow">
+            <h1 class = "animated fadeIn"> Make an Appointment </h1>
+            <p class = "animated fadeIn">Book your appointment with Tommy, now!</p>
+        </div>
+        
+        <!-- right box -->
         <div class="formBox">
-           <div class="inner-layer">
-               <div class="container">
-                   <div class="row no-margin">
-                       <div class="col-sm-7">
-                           <div class="content1">
-                                <h1>Book Your Time Slot, Now!</h1>
-                           </div>
-                       </div>
-                       <div class="col-sm-5">
-                           <div class="form-data">
-                               <div class="form-head">
+            <div class="inner-layer">
+                <div class="container">
+                    <div class="row no-margin">
+                    
+                            <div class="content1">
+                        
+                            </div>
+                        
+                        <div class="col-sm-5">
+                            <div class="form-data">
+                                <div class="form-head">
+                                    <h3 class = "animated fadeIn">BOOK YOUR APPOINTMENT</h3>
+                                </div>
+                                <div class="form-body animated fadeIn">
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Full Name" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Phone Number" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="date" placeholder="Preferred Date" class="form-control">
+                                    </div>
+                                
+                                    <div class="row form-row">
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Services">Services</option>
+                                            <option value="Service#1">Fade | $20</option>
+                                            <option value="Service#2">Fade with Beard maintence | $25</option>
+                                            <option value="Service#3">Buzz/Lineup | $15</option>
+                                            <option value="Service#4">Taper | $20</option>
+                                            <option value="Service#5">Haircut | $20</option>
+                                        </select>
+                                    </div>
 
-                               </div>
-                               <div class="form-body">
-                                   <div class="row form-row">
-                                       <input type="text" placeholder="Full Name" class="form-control">
-                                   </div>
-                                   <div class="row form-row">
-                                    <input type="text" placeholder="Phone Number" class="form-control">
-                                </div>
-                                <div class="row form-row">
-                                    <input type="text" placeholder="Email Address" class="form-control">
-                                </div>
-                                <div class="row form-row">
-                                    <input type="dat" placeholder="Preferred Appointment Date" class="form-control">
-                                </div>
-                                <div class="row form-row">
-                                    <input type="text" placeholder="Enter Full Name" class="form-control">
-                                </div>
+                                    <h4> ADDRESS DETAILS </h4>
 
-                                <h5> Address Details </h5>
-
-                                <div class="row form-row">
-                                    <div class="col-sm-6">
-                                        <div class="row form-row">
-                                            <input type="text" placeholder="Enter ZipCode" class="form-control">
+                                    <div class="row form-row">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Zip Code" class="form-control" style="text-align:center;">
                                         </div>
-                                    <div class="col-sm-6">
-                                        <div class="row form-row">
-                                            <input type="text" placeholder="Enter City" class="form-control">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="City" class="form-control" style="text-align: center;">
                                         </div>
                                     </div>
                                     <div class="row form-row">
                                         <button class="btn btn-success btn-appointment">
                                             Book Appointment
-                                        </button>
+                                        </button>   
                                     </div>
+                                    <h5> * Travel time not accounted for in scheduling</h5>
                                 </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </section>
-
+    </section>    
+           
       
 
     </header>
 
     <!-- JavaScript, Bootstrap -->
-    <script src="/public/form_assets/js/jquery-3.3.1.min.js"></script>
-    <script src="/public/form_assets/js/popper.min.js"></script>
-    <script src="/public/form_assets/js/bootstrap.min.js"></script>
-    <script src="/public/form_assets/js/bootstrap-datepicker.js"></script>
-
-    <script>
-    $(document).ready(function(){
-        $("#dat").datepicker();
-    })
-    </script>
+    <script src="form_assets/js/jquery-3.3.1.min.js"></script>
+    <script src="form_assets/js/popper.min.js"></script>
+    <script src="form_assets/js/bootstrap.min.js"></script>
+    <script src="form_assets/js/bootstrap-datepicker.js"></script>
 
 </body>
 </html>

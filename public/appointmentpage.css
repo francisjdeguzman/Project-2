@@ -58,7 +58,7 @@ ul li.active
 .logo img
 {
     float: left;
-    margin-left: 25px;
+    margin-left: 0px;
     width: 150px;
     height: auto;
     transition: 0.5s;
@@ -70,9 +70,9 @@ section
 {
     position: absolute;
     top: 25%;
-    left: 8%;
+    left: 3%;
     height: 600px;
-    width: 1400px;
+    width: 1200px;
     background-color: gray;
     opacity: 80%;
     box-shadow: 0 25px 30px rgba(0,0,0,.5);
@@ -80,24 +80,30 @@ section
 }
 
 /* left box */
-.content
+.contentRow
 {
-    width: calc(50% - 50px);
+    width: calc(72% - 72px);
     height: 100%;
     background: #fff;
     box-sizing: border-box;
-    padding: 30px 50px;
+    /* h1 p text */
+    padding: 50px 50px;
     font-family: "Cinzel", serif;
     color: #000;
     text-align: center;
+     /* animation */
+     -webkit-animation-duration:3s;
+     -webkit-animation-delay: 0.5s; 
+
 }
 
 .contentRow h1
 {
     font-family: "Cinzel", serif;
-    margin-top: 40%;
+    margin-top: 35%;
     text-align: center;
-    font-size: 700;
+    font-weight: bold;
+    font-size: 25px;
     color: #000;
 }
 
@@ -105,81 +111,209 @@ section
 {
     font-family: "Cinzel", serif;
     text-align: center;
+
 }
 
 /* right box */
-.content1
-{
-    font-family: "Cinzel", serif;
-    color: #630808 ;
-    text-align: center;
-}
+
 
 .formBox
 {
-    width: calc(50% + 50px);
+    width: calc(45% + 45px);
     height: 100%;
     box-sizing: border-box;
     background:gray;
-    border-left: 100px solid #fff;
-    border-bottom: 600px solid;
+    border-left: 120px solid #fff;
+    border-bottom: 600px solid #000;
     font-family: "Cinzel", serif;
-}
-
-.form-body
-{
-    text-align: center;
-    color: #fff;
-    padding: 15px;
-    font-family: "Cinzel", serif;
-}
-
-input[type=text]
-{
-    font-family: "Cinzel", serif;
-    width: 50%;
-    font-weight: bold;
-    color:black;
-}
-
-input[type=dat]
-{
-    font-family: "Cinzel", serif;
-    width: 50%;
-    font-weight: bold;
-    color:black;
-}
-
-.form-control 
-{
-    padding: 8px;
-}
-.form-control:hover
-{
-    box-shadow: gray;
-    border: 3px solid #630808;
-}
-.no-margin
-{
-    margin: 0px;
 }
 
 .inner-layer
 {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    margin-top: 3%;
-    left: 52%;
+    width: 48%;
+    height: 100%;
+    left: 84%;
+    background-color: #000;
+    overflow: auto;
 }
 
+.form-data
+{
+    margin-top: 20%;
+   
+}
+
+.form-head
+{
+    color: #630808;
+    padding: 0px;
+    text-align: center;
+    margin-top: 5px;
+    width: 125%;
+}
+
+.form-head h3
+{
+    font-weight: bolder;
+    font-family: "Cinzel", serif;
+    font-size: 25px;
+    margin-bottom: 8%;
+    width: 120%;
+}
+
+.form-body
+{
+    width: 100%;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    left: 55%;
+
+     /* animation */
+     -webkit-animation-duration:3s;
+     -webkit-animation-delay: 1.5s; 
+}
+
+.form-row
+{
+    margin-bottom: 5px;
+    width: 150%;
+
+}
+/* .content1 h1
+{
+    text-align: center;
+    color: #630808;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Cinzel", serif;
+} */
+
+input[type=text]
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    width: 100%;
+    font-weight: bold;
+    color: gray;
+    margin: 5px;
+}
+
+input[type=date]
+{
+    font-family: "Cinzel", serif;
+    width: 100%;
+    font-weight: bold;
+    color: gray;
+    font-size: 12px;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 0px 7px;
+}
+
+#time 
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:gray;
+    width: 100%;
+    margin: 5px;
+    border-radius: 2px;
+    padding: 2px 7px;
+}
+
+#appointmentfor
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:gray;
+    width: 100%;
+    margin: 5px;
+    padding: 2px 7px;
+}
+
+
+h4
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 45%;
+    
+}
+
+h5
+{
+    font-family: "Cinzel", serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 25%;
+    width: 100%;
+}
+
+/* form buttons */
+select::-ms-expand 
+{	
+    display: none; 
+}
+
+select
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+	.ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+  .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
+
+select:hover 
+{
+    border-color: black;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+}
+
+select:hover::-ms-expand 
+{
+display: block;
+border-color: black;
+}
+  
+.form-control 
+{
+    padding: 5px;
+    margin-top: 5%;
+    background-color: #fff;
+}
+.form-control:hover
+{
+    box-shadow: none;
+    border: 3px solid #630808;
+    background-color:lightgray;
+    font-style: italic;
+}
+/* .no-margin
+{
+    margin: 5px;
+} */
+
+/* book button */
 .btn-appointment
 {
     background-color: #630808;
     border-color: #fff;
-    width: 50%;
+    width: 100%;
     margin: 5%;
-    padding: 10px;
+    margin-bottom: 3%;
+    padding: 5px;
     font-family: "Cinzel", serif;
     font-weight: 700;   
     font-size: 15px;
