@@ -1,0 +1,4 @@
+Front end to get a list of available dates and times
+
+Back end returns list of available dates and times by querying database
+

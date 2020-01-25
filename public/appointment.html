@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Appointment - Cuts by Crafty</title>
+
+    <!-- style sheet, JS -->
+    <link rel="stylesheet" href="form_assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form_assets/css/datepicker.css">
+   
+    <!-- other style sheets -->
+    <link rel = "stylesheet" type = "text/css" href = "appointmentpage.css">
+    <link rel = "stylesheet" href = "animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|EB+Garamond|IM+Fell+Great+Primer|Libre+Baskerville&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class = "logo">
+            <img src="../images/TN_logo.png">
+        </div>
+            <ul>
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "about.html">ABOUT</a></li>
+                <li><a href = "service.html">SERVICES</a></li>
+                <li><a href = "gallery.html">GALLERY</a></li>
+                <li class = "active"><a href ="appointment.html">BOOK APPOINTMENT</a></li>
+            </ul>
+    </nav>
+        
+    <section>
+        <!-- left box -->
+        <div class="contentRow">
+            <h1 class = "animated fadeIn"> Make an Appointment </h1>
+            <p class = "animated fadeIn">Book your appointment with Tommy, now!</p>
+        </div>
+        
+        <!-- right box -->
+        <div class="formBox">
+            <div class="inner-layer">
+                <div class="container">
+                    <div class="row no-margin">
+                    
+                            <div class="content1">
+                        
+                            </div>
+                        
+                        <div class="col-sm-5">
+                            <div class="form-data">
+                                <div class="form-head">
+                                    <h3 class = "animated fadeIn">BOOK YOUR APPOINTMENT</h3>
+                                </div>
+                                <div class="form-body animated fadeIn">
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Full Name" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Phone Number" class="form-control">
+                                    </div>
+                                    <div class="row form-row">
+                                        <input type="date" placeholder="Preferred Date" class="form-control">
+                                    </div>
+                                
+                                    <div class="row form-row">
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Services">Services</option>
+                                            <option value="Service#1">Fade | $20</option>
+                                            <option value="Service#2">Fade with Beard maintence | $25</option>
+                                            <option value="Service#3">Buzz/Lineup | $15</option>
+                                            <option value="Service#4">Taper | $20</option>
+                                            <option value="Service#5">Haircut | $20</option>
+                                        </select>
+                                    </div>
+
+                                    <h4> ADDRESS DETAILS </h4>
+
+                                    <div class="row form-row">
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="Zip Code" class="form-control" style="text-align:center;">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" placeholder="City" class="form-control" style="text-align: center;">
+                                        </div>
+                                    </div>
+                                    <div class="row form-row">
+                                        <button class="btn btn-success btn-appointment">
+                                            Book Appointment
+                                        </button>   
+                                    </div>
+                                    <h5> * Travel time not accounted for in scheduling</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+           
+      
+
+    </header>
+
+    <!-- JavaScript, Bootstrap -->
+    <script src="form_assets/js/jquery-3.3.1.min.js"></script>
+    <script src="form_assets/js/popper.min.js"></script>
+    <script src="form_assets/js/bootstrap.min.js"></script>
+    <script src="form_assets/js/bootstrap-datepicker.js"></script>
+
+</body>
+</html>
