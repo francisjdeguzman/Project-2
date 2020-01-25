@@ -1,114 +1,169 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel = "stylesheet" type = "text/css" href = "..css/appts.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../Project-2/appts.css"/>
     
     <title>cutsByCrafty</title>
 </head>
 <body>
-    <div class="app-container" ng-app="dateTimeApp" ng-controller="dateTimeCtrl as ctrl" ng-cloak>
-		
-        <div date-picker
-             datepicker-title="Select Date"
-             picktime="true"
-             pickdate="true"
-             pickpast="false"
-             mondayfirst="false"
-             custom-message="You have selected"
-             selecteddate="ctrl.selected_date"
-             updatefn="ctrl.updateDate(newdate)">
-        
-            <div class="datepicker"
-                 ng-class="{
-                    'am': timeframe == 'am',
-                    'pm': timeframe == 'pm',
-                    'compact': compact
-                }">
-                <div class="datepicker-header">
-                    <div class="datepicker-title" ng-if="datepicker_title">{{ datepickerTitle }}</div>
-                    <div class="datepicker-subheader">{{ customMessage }} {{ selectedDay }} {{ monthNames[localdate.getMonth()] }} {{ localdate.getDate() }}, {{ localdate.getFullYear() }}</div>
-                </div>
-                <div class="datepicker-calendar">
-                    <div class="calendar-header">
-                        <div class="goback" ng-click="moveBack()" ng-if="pickdate">
-                            <svg width="30" height="30">
-                                <path fill="none" stroke="#0DAD83" stroke-width="3" d="M19,6 l-9,9 l9,9"/>
-                            </svg>
-                        </div>
-                        <div class="current-month-container">{{ currentViewDate.getFullYear() }} {{ currentMonthName() }}</div>
-                        <div class="goforward" ng-click="moveForward()" ng-if="pickdate">
-                            <svg width="30" height="30">
-                                <path fill="none" stroke="#0DAD83" stroke-width="3" d="M11,6 l9,9 l-9,9" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="calendar-day-header">
-                        <span ng-repeat="day in days" class="day-label">{{ day.short }}</span>
-                    </div>
-                    <div class="calendar-grid" ng-class="{false: 'no-hover'}[pickdate]">
-                        <div
-                            ng-class="{'no-hover': !day.showday}"
-                            ng-repeat="day in month"
-                            class="datecontainer"
-                            ng-style="{'margin-left': calcOffset(day, $index)}"
-                            track by $index>
-                            <div class="datenumber" ng-class="{'day-selected': day.selected }" ng-click="selectDate(day)">
-                                {{ day.daydate }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timepicker" ng-if="picktime == 'true'">
-                    <div ng-class="{'am': timeframe == 'am', 'pm': timeframe == 'pm' }">
-                        <div class="timepicker-container-outer" selectedtime="time" timetravel>
-                            <div class="timepicker-container-inner">
-                                <div class="timeline-container" ng-mousedown="timeSelectStart($event)" sm-touchstart="timeSelectStart($event)">
-                                    <div class="current-time">
-                                        <div class="actual-time">{{ time }}</div>
-                                    </div>
-                                    <div class="timeline">
-                                    </div>
-                                    <div class="hours-container">
-                                        <div class="hour-mark" ng-repeat="hour in getHours() track by $index"></div>
-                                    </div>
-                                </div>
-                                <div class="display-time">
-                                    <div class="decrement-time" ng-click="adjustTime('decrease')">
-                                        <svg width="24" height="24">
-                                            <path stroke="white" stroke-width="2" d="M8,12 h8"/>
-                                        </svg>
-                                    </div>
-                                    <div class="time" ng-class="{'time-active': edittime.active}">
-                                        <input type="text" class="time-input" ng-model="edittime.input" ng-keydown="changeInputTime($event)" ng-focus="edittime.active = true; edittime.digits = [];" ng-blur="edittime.active = false"/>
-                                        <div class="formatted-time">{{ edittime.formatted }}</div>
-                                    </div>
-                                    <div class="increment-time" ng-click="adjustTime('increase')">
-                                        <svg width="24" height="24">
-                                            <path stroke="white" stroke-width="2" d="M12,7 v10 M7,12 h10"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="am-pm-container">
-                                    <div class="am-pm-button" ng-click="changetime('am');">am</div>
-                                    <div class="am-pm-button" ng-click="changetime('pm');">pm</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="buttons-container">
-                    <div class="cancel-button">CANCEL</div>
-                    <div class="save-button">SAVE</div>
-                </div>
-                
-                <script type="text/javascript" src="appts.js"></script>
-            </div>
-        </div>
-    </div>
+    <div class="container">
+  
+        <div class="new-event" id="set-event">
+          <h2>Add New Event</h2>
+          <span id="close" class="entypo-cancel"></span>
+          <div class="cf"></div>
+     <form action="">
+       <div>
+         <label for="Event Name">Event Name </label>
+         <input type="text" name="Event Name" />
+       </div>
+       <div>
+       <label for="Event Name">Frequency</label>
+         <input type="radio" value="One Time Event" /><span>Once</span>
+         <input type="radio" value="Weekly" /><span>Weekly</span>
+         <input type="radio" value="Bi-Weekly" /><span>Bi-Weekly</span>
+         <input type="radio" value="Monthly" /><span>Monthly</span>
+       </div>
+       <div>
+          <label for="Event Name">Note</label>
+         <input type="text" name="Event Note" />
+       </div>
+         <div class="add-entry" id="add-to-calendar">Add to Calendar</div>
+     </form>
+   </div>
     
+    <div class="table">
+      <h2 class="month-year">January 2020</h2>
+      <ul class="days">
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>  
+        <div class="cf"></div>
+      </ul>
+      <ul class="single-day">
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span></span>
+        </li>
+        <li>
+          <span>1</span>
+        </li>
+        <li>
+          <span>2</span>
+        </li>
+     
+        <li>
+          <span>3</span>
+        </li>      
+        <li>
+          <span>4</span>
+        </li>
+        <li>
+          <span>5</span>
+        </li>
+        <li>
+          <span>6</span>
+        </li>
+        <li>
+          <span>7</span>
+        </li>
+        <li>
+          <span>8</span>
+        </li>
+        <li>
+          <span>9</span>
+        </li>
+     
+        <li>
+          <span>10</span>
+        </li>
+        <li>
+          <span>11</span>
+        </li>
+        <li>
+          <span>12</span>
+        </li>
+        <li>
+          <span>13</span>
+        </li>
+        <li>
+          <span>14</span>
+        </li>
+        <li>
+          <span>15</span>
+        </li>
+        <li>
+          <span>16</span>
+        </li>
+        
+        <li>
+          <span>17</span>
+        </li>
+        <li>
+          <span>18</span>
+        </li>
+        <li>
+          <span>19</span>
+        </li>
+        <li>
+          <span>20</span>
+        </li>
+        <li>
+          <span>21</span>
+        </li>
+        <li>
+          <span>22</span>
+        </li>
+        <li>
+          <span>23</span>
+        </li>
+        <li>
+          <span>24</span>
+        </li>
+        
+        <li>
+          <span>25</span>
+        </li>
+        <li>
+          <span>26</span>
+        </li>
+        <li>
+          <span>27</span>
+        </li>
+        <li>
+          <span>28</span>
+        </li>
+        <li>
+          <span>29</span>
+        </li>
+        <li>
+          <span>30</span>
+        </li>
+      
+        <div class="cf"></div>
+      </ul>
+      <footer>
+      </footer>
+    </div>
+  </div>
+    <script src="../Project-2/appts.js"></script>   
 </body>
-</html>
+</html> -->

@@ -1,4 +1,0 @@
-DROP DATABASE IF EXISTS barbershop;
-
-CREATE DATABASE barbershop;
-
