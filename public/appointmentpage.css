@@ -64,21 +64,134 @@ ul li.active
     transition: 0.5s;
 }
 
-/* content */
-.appTitle
+/* appointment div */
+
+section
 {
-    color: #fff;
-    position: relative;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    height: 600px;
+    width: 1400px;
+    background-color: gray;
+    opacity: 80%;
+    box-shadow: 0 25px 30px rgba(0,0,0,.5);
+    display: flex;
 }
 
-.appTitle h1
+/* left box */
+.content
 {
-    font-family: "IM Fell Great Primer SC", serif;
-    font-size: 45px;
+    width: calc(50% - 50px);
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 30px 50px;
+    font-family: "Cinzel", serif;
+    color: #000;
+    text-align: center;
+}
+
+.contentRow h1
+{
+    font-family: "Cinzel", serif;
+    margin-top: 40%;
+    text-align: center;
+    font-size: 700;
+    color: #000;
+}
+
+.contentRow p
+{
+    font-family: "Cinzel", serif;
+    text-align: center;
+}
+
+/* right box */
+.content1
+{
+    font-family: "Cinzel", serif;
+    color: #630808 ;
+    text-align: center;
+}
+
+.formBox
+{
+    width: calc(50% + 50px);
+    height: 100%;
+    box-sizing: border-box;
+    background:gray;
+    border-left: 100px solid #fff;
+    border-bottom: 600px solid;
+    font-family: "Cinzel", serif;
+}
+
+.form-body
+{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    font-family: "Cinzel", serif;
+}
+
+input[type=text]
+{
+    font-family: "Cinzel", serif;
+    width: 50%;
+    font-weight: bold;
+    color:black;
+}
+
+input[type=dat]
+{
+    font-family: "Cinzel", serif;
+    width: 50%;
+    font-weight: bold;
+    color:black;
+}
+
+.form-control 
+{
+    padding: 8px;
+}
+.form-control:hover
+{
+    box-shadow: gray;
+    border: 3px solid #630808;
+}
+.no-margin
+{
+    margin: 0px;
+}
+
+.inner-layer
+{
     position: absolute;
-    margin-top: 28%;
-    left: 41%;
-    /* animation */
-    -webkit-animation-duration:4s;
-    -webkit-animation-delay: .8s; 
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+    left: 52%;
+}
+
+.btn-appointment
+{
+    background-color: #630808;
+    border-color: #fff;
+    width: 50%;
+    margin: 5%;
+    padding: 10px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;   
+    font-size: 15px;
+}
+
+.btn-appointment:hover
+{
+    background-color: gray;
+}
+
+/* responsive */
+@media screen and (max-width:976px)
+{
+    
 }

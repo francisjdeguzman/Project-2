@@ -81,8 +81,8 @@ ul li.active
     left: 32%;
 
     /* animation */
-    -webkit-animation-duration:4s;
-    -webkit-animation-delay: .8s; 
+    -webkit-animation-duration:3s;
+    -webkit-animation-delay: 1s; 
     
 }
 
@@ -97,7 +97,7 @@ ul li.active
     width: 50%;
     left: 23%;
 /* animation */
-    -webkit-animation-duration:6s;
+    -webkit-animation-duration:4s;
     -webkit-animation-delay: 2s; 
     
 }
