@@ -79,8 +79,8 @@ ul li.active
 
 .title a
 {
-    -webkit-animation-duration:4s;
-    -webkit-animation-delay: 2s; 
+    -webkit-animation-duration:3s;
+    -webkit-animation-delay: 1s; 
 }
 
 .button
@@ -96,8 +96,8 @@ ul li.active
     color: #fff;
     font-family: "IM Fell Great Primer SC", serif;
     font-size: 25px;
-    -webkit-animation-duration:6s;
-    -webkit-animation-delay: 4s; 
+    -webkit-animation-duration:4s;
+    -webkit-animation-delay: 2s; 
 
     
 }

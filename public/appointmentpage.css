@@ -70,15 +70,16 @@ section
 {
     position: absolute;
     top: 25%;
-    left: 14%;
-    height: 500px;
-    width: 1200px;
+    left: 8%;
+    height: 600px;
+    width: 1400px;
     background-color: gray;
-    opacity: 50%;
+    opacity: 80%;
     box-shadow: 0 25px 30px rgba(0,0,0,.5);
     display: flex;
 }
 
+/* left box */
 .content
 {
     width: calc(50% - 50px);
@@ -88,20 +89,29 @@ section
     padding: 30px 50px;
     font-family: "Cinzel", serif;
     color: #000;
-  
+    text-align: center;
 }
 
 .contentRow h1
 {
     font-family: "Cinzel", serif;
-    margin-top: 35%;
+    margin-top: 40%;
     text-align: center;
     font-size: 700;
+    color: #000;
 }
 
 .contentRow p
 {
     font-family: "Cinzel", serif;
+    text-align: center;
+}
+
+/* right box */
+.content1
+{
+    font-family: "Cinzel", serif;
+    color: #630808 ;
     text-align: center;
 }
 
@@ -112,6 +122,87 @@ section
     box-sizing: border-box;
     background:gray;
     border-left: 100px solid #fff;
-    border-bottom: 500px solid transparent;
+    border-bottom: 600px solid;
+    font-family: "Cinzel", serif;
 }
 
+.form-body
+{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    font-family: "Cinzel", serif;
+}
+
+input[type=text]
+{
+    font-family: "Cinzel", serif;
+    width: 50%;
+    font-weight: bold;
+    color:black;
+}
+
+input[type=dat]
+{
+    font-family: "Cinzel", serif;
+    width: 50%;
+    font-weight: bold;
+    color:black;
+}
+
+.form-control 
+{
+    padding: 8px;
+}
+.form-control:hover
+{
+    box-shadow: gray;
+    border: 3px solid #630808;
+}
+.no-margin
+{
+    margin: 0px;
+}
+
+.inner-layer
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    margin-top: 3%;
+}
+
+.btn-appointment
+{
+    background-color: #630808 !important;
+    border-color: #fff !important;
+    width: 50%;
+    margin: 5%;
+    padding: 10px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;   
+    font-size: 15px;
+}
+
+.btn-appointment:hover
+{
+    background-color: gray;
+}
+
+/* datepicker */
+.datepicker td, .datepicker th
+{
+    padding: 8px;
+}
+
+.dropdown-menu.datepicker
+{
+    max-width: 300px !important;
+}
+
+
+/* responsive */
+@media screen and (max-width:976px)
+{
+    
+}
