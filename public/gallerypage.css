@@ -20,7 +20,7 @@ body
     top: 0;
     left: 0;
     margin-top: 25px;
-    margin-left: 44.5%;
+    margin-left: 46%;
     padding: 10px 100px;
     box-sizing: border-box;
     float: right;
@@ -61,7 +61,7 @@ body
 .logo img
 {
     float: left;
-    margin-left: 25px;
+    margin-left: 0px;
     width: 150px;
     height: auto;
     transition: 0.5s;
