@@ -81,7 +81,7 @@ ul li.active
     left: 41%;
     /* animation */
     -webkit-animation-duration:4s;
-    -webkit-animation-delay: .8s; 
+    -webkit-animation-delay: 0.5s; 
 }
 
 .servContent

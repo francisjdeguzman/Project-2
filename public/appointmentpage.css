@@ -175,8 +175,8 @@ input[type=dat]
 
 .btn-appointment
 {
-    background-color: #630808 !important;
-    border-color: #fff !important;
+    background-color: #630808;
+    border-color: #fff;
     width: 50%;
     margin: 5%;
     padding: 10px;
@@ -189,18 +189,6 @@ input[type=dat]
 {
     background-color: gray;
 }
-
-/* datepicker */
-.datepicker td, .datepicker th
-{
-    padding: 8px;
-}
-
-.dropdown-menu.datepicker
-{
-    max-width: 300px !important;
-}
-
 
 /* responsive */
 @media screen and (max-width:976px)
