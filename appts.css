@@ -1,0 +1,257 @@
+Roboto - Google Web Font
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto+Condensed:400,700,300);
+
+/* Font Icons */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+/* ClearFix Hack */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+/* General CSS*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #303030;
+  color: #141211;  
+}
+
+div {
+  -webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  z-index: 999;
+  top: 20px;
+  left: 125px;
+  margin: 0 auto;
+  padding: 0;
+  width: 700px;
+  height: auto;
+  background-color: #FEFEFE;
+}
+
+.table h2 {
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 2.2em;
+  color: #FFF;
+  text-align: center;
+  background-color: #29ccb6;
+  border-bottom: solid 2px #0a6b4b;
+}
+
+ul.days {
+  background-color: #2f3a45;
+  border-bottom: solid 2px #0a6b4b;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.days > li {
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  border-right: solid 1px #414b63;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  color: #FFF;
+  font-weight: 300;
+  
+}
+
+ul.days > li:last-child {
+  border-right: none;
+}
+
+.single-day > li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  vertical-align: top;
+  text-align: right;
+  width: 100px;
+  height: 100px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.single-day  > li:hover {
+  background-color: rgba(0,0,0,0.75);
+}
+
+.single-day > li > span {
+  float: right;
+  display: block;
+  padding: 5px;
+  background-color:#ccc;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  color: #444;
+  font-size: 0.75em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.single-day > li > aside {
+  display: none;
+  position: absolute;
+  margin: 35px;
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.75);
+}
+
+.single-day > li:hover > aside {
+  display: block;
+  position: absolute;
+  vertical-align: top;
+  background-color: rgba(41,204,182,0.75);
+  text-align: center;
+  cursor: pointer;
+  padding-top:5;
+  font-size: 1.8em;
+  color: #FFF;
+  box-shadow: -1px 6px 2px -2px #000;
+}
+
+footer:before {
+  content: '\00A9  Absolutely Nobody. Take This and Run with It!';
+  font-weight: 300;
+  font-size: 0.85em; 
+}
+footer {
+  margin: 0;
+  padding: 10px;
+  background-color: #2f3a45;
+  border-top: solid 2px #0a6b4b;
+  color: #FFF;
+  text-align: center;
+}
+.new-event {
+  display: none;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 20px;
+  width: 660px;
+  height: auto;
+  background-color: #fefefe;
+}
+
+.new-event h2 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  font-family: 'Roboto Slab', serif;
+}
+.new-event div {
+  display: block;
+  width: inherit;
+  height: auto;
+  margin: 5px 0 15px;
+  padding: 10px;
+  background-color: #EEE;
+  border: solid 1px #DEDEDE; 
+}
+.new-event label {
+  display: block;
+  font-size: 1.125em;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  background-color: #29ccb6;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.new-event input[type="text"], .new-event textarea {
+  display: block;
+  height: 40px;
+  width: 576px;
+  padding: 0 10px;
+  border: solid 1px #29ccb6;
+  font-size: 0.9em;
+  outline: 0;
+}
+.new-event input[type="radio"] {
+  margin: 15px 10px 10px;
+}
+
+.new-event input[type="radio"] + span {
+  padding-right: 65px;
+}
+div.add-entry {
+  margin: 10px auto;
+  padding: 10px;
+  width: 620px;
+  background-color: #2f3a45;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 1.25em;
+  font-weight: 300;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;    
+}
+
+.visible {
+  display: block;
+}
+
+#close {
+  position: relative;
+  float: right;
+  display: block;
+  top: -40px;
+  right: -30px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.new-event .cf {
+  background: none;
+  border: 0;
+}
