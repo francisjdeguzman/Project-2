@@ -130,29 +130,84 @@ section
 {
     text-align: center;
     color: #fff;
-    padding: 15px;
+    /* padding: 15px; */
     font-family: "Cinzel", serif;
 }
 
 input[type=text]
 {
     font-family: "Cinzel", serif;
+    font-size: 12px;
     width: 50%;
     font-weight: bold;
-    color:black;
+    color:#000;
 }
 
-input[type=dat]
+input[type=date]
 {
     font-family: "Cinzel", serif;
     width: 50%;
     font-weight: bold;
-    color:black;
+    color:gray;
+    font-size: 12px;
+    margin: 8px;
+    border-radius: 5px;
+    padding: 0px 7px;
 }
 
+#time 
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:gray;
+    width: 52%;
+    margin: 8px;
+    border-radius: 5px;
+    padding: 2px 7px;
+  
+}
+
+#appointmentfor
+{
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:gray;
+    width: 52%;
+    margin: 8px;
+    padding: 2px 7px;
+}
+
+/* form buttons */
+select::-ms-expand 
+{	
+    display: none; 
+}
+select
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+	.ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+  .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
+
+select:hover 
+{
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
+}
+
+select:hover::-ms-expand 
+{
+display: block;
+}
+  
 .form-control 
 {
-    padding: 8px;
+    padding: 6px;
 }
 .form-control:hover
 {
@@ -169,7 +224,7 @@ input[type=dat]
     position: absolute;
     width: 50%;
     height: 50%;
-    margin-top: 3%;
+    margin-top: 2%;
     left: 52%;
 }
 
@@ -179,7 +234,7 @@ input[type=dat]
     border-color: #fff;
     width: 50%;
     margin: 5%;
-    padding: 10px;
+    padding: 5px;
     font-family: "Cinzel", serif;
     font-weight: 700;   
     font-size: 15px;
@@ -190,6 +245,10 @@ input[type=dat]
     background-color: gray;
 }
 
+h4
+{
+    font-size: 10px;
+}
 /* responsive */
 @media screen and (max-width:976px)
 {
